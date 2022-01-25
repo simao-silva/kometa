@@ -11,7 +11,7 @@ on:
 env:
   IMAGE_NAME: "simaofsilva/plex-meta-manager"
   TAG: "test"
-  META_MANAGER_VERSION: "v1.15.0"
+  META_MANAGER_VERSION: "v1.15.1"
 
 jobs:
   build:
