@@ -1,4 +1,4 @@
-FROM python:3.10.0-alpine
+FROM python:3.10.2-alpine
 
 ARG META_MANAGER_VERSION
 
@@ -7,7 +7,7 @@ RUN apk add --no-cache git && \
     
 
 
-FROM python:3.10.0-alpine
+FROM python:3.10.2-alpine
 
 ENV PYTHONUNBUFFERED 1
 
