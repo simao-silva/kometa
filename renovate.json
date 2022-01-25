@@ -3,6 +3,7 @@
     "config:base",
     ":disableDependencyDashboard"
   ],
+  "prHourlyLimit": 0,
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
