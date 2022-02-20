@@ -6,9 +6,20 @@
   "prHourlyLimit": 0,
   "packageRules": [
     {
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": ["major", "minor", "patch", "digest"],
       "automerge": true,
       "automergeType": "branch"
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^\\.github\\/workflows\\/[^/]+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        ".*VERSION: .(?<currentValue>.*). # renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\n"
+      ],
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
     }
   ],
   "platformAutomerge": true
