@@ -11,7 +11,7 @@ on:
 env:
   IMAGE_NAME: "simaofsilva/plex-meta-manager"
   TAG: "test"
-  META_MANAGER_VERSION: "v1.17.0" # renovate: datasource=github-tags depName=meisnate12/Plex-Meta-Manager
+  META_MANAGER_VERSION: "v1.17.1" # renovate: datasource=github-tags depName=meisnate12/Plex-Meta-Manager
 
 jobs:
   build:
