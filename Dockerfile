@@ -1,4 +1,4 @@
-FROM python:3.10.6-alpine@sha256:2aa8ef7150da834c22bc32e1d87f9f92492194ad7e9460d2249630dfdc9ef310
+FROM python:3.10.6-alpine@sha256:baac1e99d64d1af62f8e30a137352a85b9e6ba6c86aba8a245657e182b2c971c
 
 ARG META_MANAGER_VERSION
 
@@ -7,7 +7,7 @@ RUN apk add --no-cache git && \
     
 
 
-FROM python:3.10.6-alpine@sha256:2aa8ef7150da834c22bc32e1d87f9f92492194ad7e9460d2249630dfdc9ef310
+FROM python:3.10.6-alpine@sha256:baac1e99d64d1af62f8e30a137352a85b9e6ba6c86aba8a245657e182b2c971c
 
 ENV PYTHONUNBUFFERED 1
 
