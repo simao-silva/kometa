@@ -22,9 +22,9 @@ COPY --from=0 /Plex-Meta-Manager/VERSION VERSION
 RUN echo "**** install system packages ****" && \
     apk update && \
     apk add --no-cache libxml2-dev libxslt-dev jpeg-dev && \
-    apk add --no-cache --virtual .build-deps tzdata gcc g++ python3-dev zlib-dev && \
+    apk add --no-cache --virtual .build-deps tzdata gcc g++ python3-dev zlib-dev linux-headers && \
     echo "**** install python packages ****" && \
-    pip3 install --no-cache-dir --upgrade --requirement requirements.txt  && \
+    pip3 install --no-cache-dir --upgrade --requirement requirements.txt && \
     apk del .build-deps && \
     rm -rf /var/cache/apk/* /tmp/* requirements.txt	
 
