@@ -3,10 +3,10 @@ name: "test pull request"
 on:
   push:
     branches-ignore:
-      - 'main'
+      - "main"
   pull_request:
     branches:
-      - 'main'
+      - "main"
 
 env:
   IMAGE_NAME: "simaofsilva/plex-meta-manager"

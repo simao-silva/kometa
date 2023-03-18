@@ -4,7 +4,7 @@ ARG META_MANAGER_VERSION
 
 RUN apk add --no-cache git && \
     git clone https://github.com/meisnate12/Plex-Meta-Manager -b ${META_MANAGER_VERSION}
-    
+
 
 
 FROM python:3.11.2-alpine@sha256:741e650697a506f0991ef88490320dee59f9e68de61734e034aee11d2f3baedf
