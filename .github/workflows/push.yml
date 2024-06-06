@@ -9,8 +9,9 @@ on:
       - .github/workflows/push.yml
 
 env:
-  IMAGE_NAME: "simaofsilva/plex-meta-manager"
-  META_MANAGER_VERSION: "v2.0.2" # renovate: datasource=github-tags depName=meisnate12/Plex-Meta-Manager
+  IMAGE_NAME: "simaofsilva/kometa"
+  LEGACY_IMAGE_NAME: "simaofsilva/plex-meta-manager"
+  KOMETA_VERSION: "v2.0.1" # renovate: datasource=github-tags depName=Kometa-Team/Kometa
 
 jobs:
   build-and-push:
@@ -38,7 +39,9 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8
           push: true
           tags: |
-            ${{ env.IMAGE_NAME }}:${{ env.META_MANAGER_VERSION }}
+            ${{ env.IMAGE_NAME }}:${{ env.KOMETA_VERSION }}
+            ${{ env.LEGACY_IMAGE_NAME }}:${{ env.KOMETA_VERSION }}
             ${{ env.IMAGE_NAME }}:latest
+            ${{ env.LEGACY_IMAGE_NAME }}:latest
           file: Dockerfile
-          build-args: META_MANAGER_VERSION=${{ env.META_MANAGER_VERSION }}
+          build-args: KOMETA_VERSION=${{ env.KOMETA_VERSION }}
