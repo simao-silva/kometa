@@ -1,4 +1,4 @@
-FROM python:3.12.5-alpine@sha256:bb5d0ac04679d78a1258e7dfacdb4d9bdefe9a10480eaf9b4bb09445d076369f
+FROM python:3.12.6-alpine@sha256:24097f5d0faa119261b862e551b7bcb5bc1b34b448b3394e6e91d61f93a220cf
 
 # Prevent Python from writing out pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -27,7 +27,7 @@ RUN apk add --no-cache git && \
 
 
 
-FROM python:3.12.5-alpine@sha256:bb5d0ac04679d78a1258e7dfacdb4d9bdefe9a10480eaf9b4bb09445d076369f
+FROM python:3.12.6-alpine@sha256:24097f5d0faa119261b862e551b7bcb5bc1b34b448b3394e6e91d61f93a220cf
 
 # Prevent Python from writing out pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
