@@ -11,7 +11,7 @@ on:
 env:
   IMAGE_NAME: "simaofsilva/kometa"
   LEGACY_IMAGE_NAME: "simaofsilva/plex-meta-manager"
-  KOMETA_VERSION: "v2.0.2" # renovate: datasource=github-tags depName=Kometa-Team/Kometa
+  KOMETA_VERSION: "v2.1.0" # renovate: datasource=github-tags depName=Kometa-Team/Kometa
 
 jobs:
   build-and-push:
