@@ -10,7 +10,10 @@
         "major",
         "minor",
         "patch",
-        "digest"
+        "pin",
+        "pinDigest",
+        "digest",
+        "replacement"
       ],
       "automerge": true,
       "automergeType": "pr",
