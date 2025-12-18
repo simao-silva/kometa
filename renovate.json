@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":disableDependencyDashboard"
   ],
   "prHourlyLimit": 0,
@@ -10,10 +10,15 @@
         "major",
         "minor",
         "patch",
-        "digest"
+        "pin",
+        "pinDigest",
+        "digest",
+        "replacement"
       ],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "pr",
+      "automergeStrategy": "squash",
+      "ignoreTests": false
     }
   ],
   "regexManagers": [
